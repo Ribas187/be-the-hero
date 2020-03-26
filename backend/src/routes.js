@@ -11,6 +11,7 @@ routes.post('/sessions', SessionController.store);
 
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.store);
+routes.delete('/ongs/:id', OngController.delete);
 
 routes.get('/profile', ProfileController.index);
 
