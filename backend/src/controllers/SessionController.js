@@ -1,4 +1,4 @@
-const connection = require('../database/connection');
+import connection from '../database/connection';
 
 class SessionController {
   async store(req, res) {
@@ -14,4 +14,4 @@ class SessionController {
   }
 }
 
-module.exports = new SessionController();
+export default new SessionController();

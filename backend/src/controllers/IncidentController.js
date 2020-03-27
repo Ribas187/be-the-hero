@@ -1,4 +1,4 @@
-const connection = require('../database/connection');
+import connection from '../database/connection';
 
 class IncidentController {
   async index(req, res) {
@@ -47,6 +47,10 @@ class IncidentController {
       .select('ong_id')
       .first();
 
+    if (!incident) {
+      return res.status(401).json({ error: 'Invalid ID' });
+    }
+
     if (incident.ong_id !== ong_id) {
       return res.status(401).json({ error: 'Operation not permitted.' });
     }
@@ -57,4 +61,4 @@ class IncidentController {
   }
 }
 
-module.exports = new IncidentController();
+export default new IncidentController();
