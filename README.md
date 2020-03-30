@@ -73,7 +73,7 @@ yarn dev
 cd frontend
 yarn start
 ```
-#### Iniciando mobile
+#### Iniciando Mobile
 ```sh
 cd mobile
 yarn start
