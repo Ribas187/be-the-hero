@@ -66,7 +66,7 @@ yarn
 #### Iniciando Backend
 ```sh
 cd backend
-yarn start
+yarn dev
 ```
 #### Iniciando Frontend
 ```sh
